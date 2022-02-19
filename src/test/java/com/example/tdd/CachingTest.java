@@ -1,6 +1,6 @@
 package com.example.tdd;
 
-import com.example.tdd.domain.Car;
+import com.example.tdd.model.Car;
 import com.example.tdd.repository.CarRepository;
 import com.example.tdd.service.CarService;
 import org.junit.Test;

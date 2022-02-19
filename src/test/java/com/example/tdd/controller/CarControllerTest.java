@@ -1,7 +1,6 @@
-package com.example.tdd;
+package com.example.tdd.controller;
 
-import com.example.tdd.controller.CarController;
-import com.example.tdd.domain.Car;
+import com.example.tdd.model.Car;
 import com.example.tdd.exception.CarNotFoundException;
 import com.example.tdd.service.CarService;
 import org.junit.Test;

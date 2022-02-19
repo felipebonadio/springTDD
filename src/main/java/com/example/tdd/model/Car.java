@@ -1,4 +1,4 @@
-package com.example.tdd.domain;
+package com.example.tdd.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

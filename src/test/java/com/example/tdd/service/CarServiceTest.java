@@ -1,9 +1,8 @@
-package com.example.tdd;
+package com.example.tdd.service;
 
-import com.example.tdd.domain.Car;
+import com.example.tdd.model.Car;
 import com.example.tdd.exception.CarNotFoundException;
 import com.example.tdd.repository.CarRepository;
-import com.example.tdd.service.CarService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

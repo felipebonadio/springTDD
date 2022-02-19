@@ -1,6 +1,6 @@
 package com.example.tdd.service;
 
-import com.example.tdd.domain.Car;
+import com.example.tdd.model.Car;
 import com.example.tdd.exception.CarNotFoundException;
 import com.example.tdd.repository.CarRepository;
 import org.springframework.cache.annotation.Cacheable;

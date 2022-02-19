@@ -1,4 +1,4 @@
-package com.example.tdd;
+package com.example.tdd.controller;
 
 import com.example.tdd.controller.BookingController;
 import com.example.tdd.model.BookingModel;

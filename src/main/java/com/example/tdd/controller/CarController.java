@@ -1,6 +1,6 @@
 package com.example.tdd.controller;
 
-import com.example.tdd.domain.Car;
+import com.example.tdd.model.Car;
 import com.example.tdd.exception.CarNotFoundException;
 import com.example.tdd.service.CarService;
 import org.springframework.http.HttpStatus;
