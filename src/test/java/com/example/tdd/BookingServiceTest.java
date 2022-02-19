@@ -17,6 +17,7 @@ import java.time.LocalDate;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
 
 @RunWith(SpringRunner.class)
 public class BookingServiceTest {
@@ -39,9 +40,9 @@ public class BookingServiceTest {
     public void setup(){
         LocalDate checkIn = LocalDate.parse("2020-11-10");
         LocalDate checkOut = LocalDate.parse("2020-11-20");
-        BookingModel bookingModel = new BookingModel("1", "Felipe", checkIn, checkOut, 2);
+        BookingModel bookingModel = new BookingModel(1L, "Felipe", checkIn, checkOut, 2);
 
-        Mockito.when(bookingRepository.findByReserveName(bookingModel.getReserveName()))
+        when(bookingRepository.findByReserveName(bookingModel.getReserveName()))
                 .thenReturn(Optional.of(bookingModel));
     }
 

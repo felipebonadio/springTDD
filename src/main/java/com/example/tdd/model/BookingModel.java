@@ -1,16 +1,20 @@
 package com.example.tdd.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.LocalDate;
 
+@Entity
 public class BookingModel {
 
-    private String id;
+    @Id
+    private Long id;
     private String reserveName;
     private LocalDate checkIn;
     private LocalDate checkOut;
     private int NumberGuest;
 
-    public BookingModel(String id, String reserveName, LocalDate checkIn, LocalDate checkOut, int numberGuest) {
+    public BookingModel(Long id, String reserveName, LocalDate checkIn, LocalDate checkOut, int numberGuest) {
         this.id = id;
         this.reserveName = reserveName;
         this.checkIn = checkIn;
@@ -18,11 +22,14 @@ public class BookingModel {
         NumberGuest = numberGuest;
     }
 
-    public String getId() {
+    public BookingModel() {
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

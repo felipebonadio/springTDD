@@ -12,7 +12,7 @@ import java.util.Optional;
 public class BookingService {
 
     @Autowired
-    BookingRepository bookingRepository;
+    private BookingRepository bookingRepository;
 
     public int daysCalculatorWithDatabase(String name) {
         Optional<BookingModel> bookingModelOptional = bookingRepository.findByReserveName(name);

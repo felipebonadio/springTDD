@@ -36,7 +36,7 @@ public class BookingControllerTest {
     public void bookingTestSave() throws Exception {
         LocalDate checkIn = LocalDate.parse("2020-11-10");
         LocalDate checkOut = LocalDate.parse("2020-11-20");
-        BookingModel bookingModel = new BookingModel("1", "Felipe", checkIn, checkOut, 2);
+        BookingModel bookingModel = new BookingModel(1L, "Felipe", checkIn, checkOut, 2);
 
         mockMvc.perform(post("/bookings")
                 .contentType("application/json")
